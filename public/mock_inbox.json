@@ -1,14 +1,98 @@
 [
-  {"id":"eml_001","from":"pm@acme.com","subject":"Sprint planning this Wednesday","timestamp":"2025-01-05T09:30:00Z","body":"Hi team, can you present the Q1 roadmap on Wednesday 10:00? Please include risks and dependencies. Thanks!","thread":[]},
-  {"id":"eml_002","from":"news@framework.dev","subject":"Your weekly frontend digest","timestamp":"2025-01-04T08:10:00Z","body":"Highlights: React Patterns, Vite 6 preview, CSS container queries in practice.","thread":[]},
-  {"id":"eml_003","from":"recruiter@agency.com","subject":"Exciting opportunity with competitive package","timestamp":"2025-01-03T16:11:00Z","body":"We have an amazing role for you. Click this link to apply now!!!","thread":[]},
-  {"id":"eml_004","from":"design@acme.com","subject":"Homepage visuals ready for review","timestamp":"2025-01-06T13:45:00Z","body":"Please review the attached Figma file and comment by Friday. Also confirm the hero copy.","thread":[]},
-  {"id":"eml_005","from":"ceo@acme.com","subject":"Client escalation: outage summary","timestamp":"2025-01-06T07:20:00Z","body":"Need a brief RCA summary by EOD for the client call. Include timeline and mitigations.","thread":[]},
-  {"id":"eml_006","from":"calendar@zoom.us","subject":"Invite: Vendor security review","timestamp":"2025-01-07T11:00:00Z","body":"Requesting a 30-min call to discuss security questionnaire. Are you available Thu 2pm?","thread":[]},
-  {"id":"eml_007","from":"ops@acme.com","subject":"Action needed: rotate staging API keys","timestamp":"2025-01-02T10:02:00Z","body":"Per policy, rotate the staging keys before Jan 12 and confirm in #security.","thread":[]},
-  {"id":"eml_008","from":"marketing@acme.com","subject":"January campaign kickoff notes","timestamp":"2025-01-05T18:00:00Z","body":"Please draft first-pass copy for the landing page by next Monday.","thread":[]},
-  {"id":"eml_009","from":"random@unknown.biz","subject":"WIN BIG PRIZES!!!","timestamp":"2025-01-01T05:00:00Z","body":"Click here for rewards. Urgent!!!","thread":[]},
-  {"id":"eml_010","from":"hr@acme.com","subject":"Benefits enrollment deadline reminder","timestamp":"2025-01-08T12:00:00Z","body":"Complete your enrollment by Jan 20. Reach out if you need help.","thread":[]},
-  {"id":"eml_011","from":"partner@contoso.com","subject":"Agenda for next week’s integration sync","timestamp":"2025-01-09T09:00:00Z","body":"Can we confirm the agenda items and attendees? We propose Tue 3pm.","thread":[]},
-  {"id":"eml_012","from":"finance@acme.com","subject":"Invoice 1143 – approval needed","timestamp":"2025-01-03T12:30:00Z","body":"Please approve invoice 1143 by Thursday or flag discrepancies.","thread":[]}
+  {
+    "id": "eml_001",
+    "from": "pm@acme.com",
+    "subject": "Q1 roadmap review + risks and follow-ups",
+    "timestamp": "2025-01-05T09:30:00Z",
+    "body": "Hi team,\n\nOn Wednesday 10:00 we need to review the Q1 roadmap with the client. Please: (1) finalize slides by Tuesday 17:00, (2) list top 5 risks with owners, and (3) prepare a follow-up email summarizing open questions.\n\nReply by Monday noon if you cannot attend.\n\nThanks!",
+    "thread": []
+  },
+  {
+    "id": "eml_002",
+    "from": "marketing@acme.com",
+    "subject": "January promo campaign – assets, deadlines, and budget approval",
+    "timestamp": "2025-01-04T08:10:00Z",
+    "body": "Hey,\n\nWe’re launching the January promotional campaign across email, social, and paid ads. We need from you: (a) approve the proposed budget by Jan 10, (b) draft social copy for LinkedIn and Instagram by Jan 8, and (c) confirm tracking URLs.\n\nThis is a marketing/promotional email but requires your approval and content work.\n\nPlease confirm if these dates work.",
+    "thread": []
+  },
+  {
+    "id": "eml_003",
+    "from": "recruiter@agency.com",
+    "subject": "Senior Engineer role – compensation details and next steps",
+    "timestamp": "2025-01-03T16:11:00Z",
+    "body": "Hi there,\n\nWe loved your profile and would like to move you to the final stage for a Senior Engineer opportunity. The salary range is 45–55 LPA plus ESOPs. If you’re interested, please reply with your updated resume by Jan 9 and your availability for a 60-min panel next week.\n\nThis could be a career opportunity; let me know if you want to proceed.",
+    "thread": []
+  },
+  {
+    "id": "eml_004",
+    "from": "design@acme.com",
+    "subject": "Homepage revamp – design review, copy sign-off, and handoff",
+    "timestamp": "2025-01-06T13:45:00Z",
+    "body": "Hi,\n\nThe new homepage designs are ready in Figma. Please: (1) review all desktop and mobile breakpoints, (2) leave comments by Thursday 18:00, and (3) confirm final hero copy and CTA text. After sign-off we’ll hand off to engineering on Friday.\n\nThis touches brand, UX, and development timelines, so we may need another check-in meeting.",
+    "thread": []
+  },
+  {
+    "id": "eml_005",
+    "from": "ceo@acme.com",
+    "subject": "Client escalation – outage RCA, follow-up call, and preventive actions",
+    "timestamp": "2025-01-06T07:20:00Z",
+    "body": "Team,\n\nDue to yesterday’s outage, the client requested a clear root-cause analysis (RCA). By today 17:30 IST, please: (1) draft a 1-page RCA with timeline, (2) list at least three preventive actions with owners and target dates, and (3) schedule a 30-min follow-up call with the client this week.\n\nThis is high priority and directly impacts renewal.",
+    "thread": []
+  },
+  {
+    "id": "eml_006",
+    "from": "calendar@zoom.us",
+    "subject": "Invite: Vendor security review + document checklist",
+    "timestamp": "2025-01-07T11:00:00Z",
+    "body": "Hello,\n\nOur security team would like a 30-min call to review your responses to the security questionnaire. Please propose two time slots on Thursday afternoon and upload the latest SOC2 report and penetration test summary before the meeting.\n\nIf these documents are not available, reply with an explanation and expected delivery date.",
+    "thread": []
+  },
+  {
+    "id": "eml_007",
+    "from": "ops@acme.com",
+    "subject": "Action required: rotate staging + production API keys and update runbooks",
+    "timestamp": "2025-01-02T10:02:00Z",
+    "body": "Hi,\n\nPer security policy, please rotate both staging and production API keys before Jan 12. After rotation: (1) update the CI/CD secrets store, (2) verify that smoke tests pass, and (3) update the runbook with the new rotation date.\n\nConfirm completion in the #security Slack channel with a short summary.",
+    "thread": []
+  },
+  {
+    "id": "eml_008",
+    "from": "newsletter@devweekly.io",
+    "subject": "Dev Weekly – React patterns, AI tooling, and open roles",
+    "timestamp": "2025-01-05T18:00:00Z",
+    "body": "Your weekly developer newsletter including long-form articles on React performance, AI productivity tools, and a curated list of job opportunities. No direct action is required, but you might want to bookmark jobs or tutorials for later.",
+    "thread": []
+  },
+  {
+    "id": "eml_009",
+    "from": "promo@shopping-world.com",
+    "subject": "LIMITED TIME: 70% OFF electronics + cashback",
+    "timestamp": "2025-01-01T05:00:00Z",
+    "body": "Huge New Year promotional sale on electronics. Multiple exclamation marks!!! Click the tracking link below to claim your reward before midnight. This is clearly a marketing / promotional blast and may be close to spam.",
+    "thread": []
+  },
+  {
+    "id": "eml_010",
+    "from": "social@meetup.com",
+    "subject": "Your AI & ML meetup – feedback form and next event vote",
+    "timestamp": "2025-01-08T12:00:00Z",
+    "body": "Thanks for attending the AI & ML community meetup. Please fill out the feedback form by Jan 15 and vote on topics for the next event (RAG, agents, or MLOps). Optional: share photos in the community Slack. This is a social / community style email with light tasks.",
+    "thread": []
+  },
+  {
+    "id": "eml_011",
+    "from": "partner@contoso.com",
+    "subject": "Integration sync – agenda, attendees, and pre-reads",
+    "timestamp": "2025-01-09T09:00:00Z",
+    "body": "Hi,\n\nFor next week’s integration sync, could you: (1) confirm the list of attendees, (2) propose a detailed agenda by Monday EOD, and (3) share any technical docs we should read in advance? We’re proposing Tuesday 15:00–16:00 CET but can adjust.\n\nPlease reply with your availability and agenda edits.",
+    "thread": []
+  },
+  {
+    "id": "eml_012",
+    "from": "finance@acme.com",
+    "subject": "Invoice 1143 + 1144 – approval, payment deadline, and dispute option",
+    "timestamp": "2025-01-03T12:30:00Z",
+    "body": "Hello,\n\nInvoices 1143 and 1144 are pending your approval. Please review line items and either: (a) approve both invoices by Thursday 17:00 so payment can be processed by Jan 20, or (b) reply with discrepancies to open a dispute ticket.\n\nAccounting will automatically send reminders if this is not completed.",
+    "thread": []
+  }
 ]

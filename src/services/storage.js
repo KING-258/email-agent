@@ -6,8 +6,8 @@ const KEYS = {
 }
 
 const defaultPrompts = {
-  categorization_prompt: "Categorize emails into: Important, Newsletter, Spam, To-Do. To-Do emails must include a direct request requiring user action. Return JSON: {\"category\": one of ['Important','Newsletter','Spam','To-Do'], \"tags\": [string], \"reason\": string }",
-  action_prompt: "Extract tasks from the email. Respond in JSON array of objects: [{ \"task\": string, \"deadline\": string|null, \"owner\": string|null }]. If none, return [].",
+  categorization_prompt: "Categorize the email into exactly one of: Important, To-Do, Newsletter, Promotional, Social, Opportunity, Junk, Spam, Other. Return strict JSON: {\"category\": string, \"tags\": [string], \"action_tags\": [\"reply\"|\"schedule_meeting\"|\"read_later\"|\"archive\"|\"follow_up\"|\"delegate\"|\"investigate\"|\"approve\"|\"pay\"], \"reason\": string }. Choose action_tags that describe what the user should do (e.g. reply, schedule_meeting).",
+  action_prompt: "Extract actionable tasks from the email for the user. Return a JSON array of objects: [{ \"task\": string, \"deadline\": string|null, \"owner\": string|null, \"action_tag\": one of ['reply','schedule_meeting','read_later','archive','follow_up','delegate','investigate','approve','pay'] }]. If none, return []. Be conservative and avoid hallucinations.",
   autoreply_prompt: "If an email is a meeting request, draft a polite reply asking for an agenda. Otherwise draft a concise, helpful reply. Be professional and friendly."
 }
 
