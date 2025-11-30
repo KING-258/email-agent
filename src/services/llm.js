@@ -3,8 +3,10 @@ let engine = null
 export async function initLLM(onStatus){
   if(engine) return engine
   const { CreateMLCEngine, prebuiltAppConfig } = await import('@mlc-ai/web-llm')
-  const model = 'qwen2-0.5b-instruct-q4f16_1-MLC' // small, downloads in browser; no API key
-  engine = await CreateMLCEngine({ model }, {
+  // Use a small prebuilt model that runs fully in-browser. The ID must match
+  // one in prebuiltAppConfig.model_list.
+  const modelId = 'Qwen2-0.5B-Instruct-q4f16_1-MLC'
+  engine = await CreateMLCEngine(modelId, {
     appConfig: prebuiltAppConfig,
     initProgressCallback: (report)=>{
       if(onStatus){
